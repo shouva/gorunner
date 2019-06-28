@@ -10,7 +10,7 @@ git pull
 
 ```
 
-you can setting path of js source and delay time.
+you can setting path of go source, delay time, branch, and output-name.
 
 ## How to Use
 
