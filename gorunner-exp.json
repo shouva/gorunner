@@ -1,0 +1,6 @@
+{
+    "path":"~/codes/go/src/github.com/mosleim/gochanged",
+    "delay": 10,
+    "branch": "master",
+    "output": "output"
+}
