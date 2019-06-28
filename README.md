@@ -1,10 +1,12 @@
-# GitPuller
-this tool to pull js project and automatic build. identical to:
+# GoRunner
+this tool to pull go project and automatic build and run it. identical to:
 ```
-cd to\js\path\project
+cd to\go\path\project
 git pull 
 #if new push there
-npm run build
+  kill current process
+  go build -o output
+  ./output
 
 ```
 
@@ -13,19 +15,26 @@ you can setting path of js source and delay time.
 ## How to Use
 
   1. install
-     ```go get github.com/shouva/gitpuller```
-  2. create config
-      ```
-      vim setting.json
-      ```
-      add this text:
-      ```
-      {
-        "path":"/home/mosleim/js/apitest",
-        "delay": 60
-      }
+     ```go get github.com/shouva/gorunner```
    
-  3. run it!
+  2. run it!, process will error. this normal.
   ```
-  gitpuller
+  gorunner
   ```
+  3. edit gorunner.json
+  ```
+  {
+      "path":"~/codes/go/src/github.com/mosleim/gochanged",
+      "delay": 10,
+      "branch": "master",
+      "output": "output"
+  }
+  ```
+  4. run again!
+  ```
+  gorunner
+  ```
+  5. Happy code and running. :-)
+
+
+This repository is powered by [CV. Otoritech](https://otoritech.com) and [Shouva Store](https://shouva.com).
